@@ -28,6 +28,8 @@
         </div>
       </div>
     </div>
+    <!-- Projects anchor tag -->
+    <a id='projects'></a>
     <projects />
   </div>
 </template>
