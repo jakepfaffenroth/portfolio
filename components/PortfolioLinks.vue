@@ -7,10 +7,10 @@
     >
       GitHub
     </a>
-    <a href="#projects" target="_blank" class="btn btn-orange">
+    <a href="#projects" class="btn btn-orange">
       Projects
     </a>
-    <a href="mailto:hello@jakepfaf.dev" target="_blank" class="btn btn-yellow">
+    <a href="mailto:hello@jakepfaf.dev" class="btn btn-yellow">
       Email me
     </a>
   </div>
