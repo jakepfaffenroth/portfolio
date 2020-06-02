@@ -1,5 +1,5 @@
 <template>
-  <div id="links">
+  <div id="links" class='text-center'>
     <a
       href="https://github.com/jakepfaffenroth"
       target="_blank"
