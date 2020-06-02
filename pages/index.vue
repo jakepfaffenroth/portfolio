@@ -1,41 +1,68 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        Web Developement Portfolio of Jake Pfaffenroth
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div
+      id="hello"
+      class="h-screen flex items-center justify-center text-center"
+    >
+      <div class="text-gray-900">
+        <photo class="h-64 w-64 m-auto rounded-full" />
+        <div id="hello-text" class="mt-4 text-gray-900">
+          <h1 class="text-4xl sm:text-5xl font-light">
+            JAKE PFAFFENROTH
+          </h1>
+          <h2 class="text-2xl sm:text-3xl font-thin">
+            Full stack web developer
+          </h2>
+          <!-- Tech Stack rows -->
+          <div id="front-end-stack" class="stack sm:px-8 pt-6 space-x-6">
+            <p class="p-1 sm:p-2" v-for="tech in techStackFE" :key="tech">
+              {{ tech.name }}
+            </p>
+          </div>
+          <div id="back-end-stack" class="stack sm:px-8 pb-4 sm:pb-6 space-x-6">
+            <p class="p-1 sm:p-2" v-for="tech in techStackBE" :key="tech">
+              {{ tech.name }}
+            </p>
+          </div>
+          <!-- Links display only on wider screens -->
+          <portfolio-links class="flex mt-6 justify-center space-x-4" />
+        </div>
       </div>
     </div>
+    <projects id="projects" />
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import VueLogo from "~/assets/img/vue-logo.svg";
+import Photo from "~/components/Photo.vue";
+import Projects from "~/components/Projects.vue";
+import PortfolioLinks from "~/components/PortfolioLinks.vue";
+import PortfolioLinksMobile from "~/components/PortfolioLinksMobile.vue";
 
 export default {
   components: {
-    Logo
+    Photo,
+    Projects,
+    PortfolioLinks
+  },
+  data() {
+    return {
+      techStackFE: {
+        html5: { name: "html5", img: VueLogo },
+        css3: { name: "CSS3", img: VueLogo },
+        js: { name: "Javascript", img: VueLogo },
+        vue: { name: "Vue.js", img: VueLogo }
+      },
+      techStackBE: {
+        express: { name: "Express", img: "" },
+        nodejs: { name: "Node.js", img: "" },
+        mongodb: { name: "MongoDb", img: "" },
+        sql: { name: "SQL", img: "" }
+      }
+    };
   }
-}
+};
 </script>
 
 <style>
@@ -44,34 +71,11 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.stack {
+  @apply flex flex-wrap px-2 justify-center;
 }
 </style>
