@@ -2,7 +2,7 @@
   <div>
     <div
       id="hello"
-      class="h-screen flex items-center justify-center text-center"
+      class="h-screen flex pt-12 sm:pt-0 sm:items-center justify-center text-center"
     >
       <div class="text-gray-900">
         <photo class="h-64 w-64 m-auto rounded-full" />
