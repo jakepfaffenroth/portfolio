@@ -1,5 +1,5 @@
 <template>
-  <section class="flex m-8 h-screen space-x-12 justify-center text-center">
+  <section id="projects" class="flex m-8 h-screen space-x-12 justify-center text-center">
     <div v-for="project in projects" :key="project" class="project">
       <img :src="project.image" class="mb-4" />
       <div class="project-text">
