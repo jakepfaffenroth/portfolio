@@ -24,7 +24,6 @@
               {{ tech.name }}
             </p>
           </div>
-          <!-- Links display only on wider screens -->
           <portfolio-links class="flex mt-6 justify-center space-x-4" />
         </div>
       </div>
@@ -49,7 +48,7 @@ export default {
   data() {
     return {
       techStackFE: {
-        html5: { name: "html5", img: VueLogo },
+        html5: { name: "HTML5", img: VueLogo },
         css3: { name: "CSS3", img: VueLogo },
         js: { name: "Javascript", img: VueLogo },
         vue: { name: "Vue.js", img: VueLogo }
