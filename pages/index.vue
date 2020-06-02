@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <projects id="projects" />
+    <projects />
   </div>
 </template>
 
