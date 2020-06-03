@@ -4,9 +4,9 @@
       <img :src="project.image" class="mb-4" />
       <div class="project-text">
         <h3 class="text-2xl">{{ project.title }}</h3>
-        <p class="text-lg font-light">{{ project.stack }}</p>
-        <p class="text-lg font-thin">{{ project.notes }}</p>
-        <div class="flex mx-6 mt-2 justify-around">
+        <!-- <p class="text-md font-light">{{ project.stack }}</p> -->
+        <p class="my-4 text-md font-light">{{ project.notes }}</p>
+        <div class="flex mx-6 mt-2 justify-around ">
           <a :href="project.live" class="link-live"> Live </a
           ><a :href="project.gitHub" class="link-github"> GitHub </a>
         </div>
@@ -26,7 +26,7 @@ export default {
           title: "Weather App",
           image: WeatherImg,
           stack: "Vue.js",
-          notes: "A clean, modern weather app with efficient data presentation",
+          notes: "Built using Vue.js, Tailwind.css, & Chart.js. Weather data from Climacell API. Geolocation data from HERE.",
           gitHub: "https://www.github.com/jakepfaffenroth/weather-app",
           live: "https://weather.jakepfaf.dev"
         },
@@ -47,7 +47,7 @@ export default {
 <style>
 .project {
   @apply p-2 w-64 border rounded shadow-sm transition duration-150 ease-in-out;
-  height:28rem;
+  height:30rem;
 }
 
 .project:hover {
