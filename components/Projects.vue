@@ -4,8 +4,8 @@
       <img :src="project.image" class="mb-4" />
       <div class="project-text">
         <h3 class="text-2xl">{{ project.title }}</h3>
-        <p class="text-lg font-light">{{ project.stack }}</p>
-        <p class="text-lg font-thin">{{ project.notes }}</p>
+        <p class="text-lg font-light">{{ project.notes }}</p>
+        <p class="text-md font-light">> {{ project.stack }}</p>
         <div class="flex mx-6 mt-2 justify-around">
           <a :href="project.live" class="link-live"> Live </a
           ><a :href="project.gitHub" class="link-github"> GitHub </a>

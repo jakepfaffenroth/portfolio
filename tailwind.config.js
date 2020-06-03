@@ -17,7 +17,8 @@ module.exports = {
     },
     fontFamily: {
       display: ["Crimson Text", "serif"],
-      body: ["Lato", "sans-serif"]
+      body: ["Lato", "sans-serif"],
+      test: ["Tenali Ramakrishna"]
     }
   },
   variants: {},

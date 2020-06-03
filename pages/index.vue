@@ -1,5 +1,9 @@
 <template>
-  <div class="sm:px-8 md:px-16 lg:px-48">
+  <section class="sm:px-8 md:px-16 lg:px-48">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <header
       class="sticky sm:flex justify-between pt-4 space-y-4 sm:space-y-0 text-center font-display"
     >
@@ -11,6 +15,7 @@
           <p class="font-normal">Full stack web developer</p>
         </div>
       </div>
+
       <!-- TODO - Make responsive compact menu -->
       <nav class="space-x-6">
         <a v-for="(value, name, index) in navLinks" :key="value">
@@ -26,15 +31,14 @@
       />
       <div
         id="hello-text"
-        class="lg:pr-32 md:text-md font-thin font-body text-gray-900 "
+        class="lg:pr-32 md:text-md font-light font-body text-gray-900"
       >
-        <h1 class="text-3xl sm:text-4xl font-light font-display  ">
+        <h1 class="text-3xl sm:text-4xl font-display  ">
           Hello
         </h1>
         <p>
           I'm a full stack web developer with diverse range of experience
-          including higher education, non-profit leadership, and professional
-          photography. I'm interested in lots of things, and when I want to
+          including higher education, non-profit leadership, and          photography. I'm interested in lots of things, and when I want to
           learn something I dive in head-first. In 2018 I completed a Ph.D. in
           Anthropology and, after teaching in higher education for several
           years, decided to pursue web development.
@@ -60,21 +64,22 @@
     <!-- Projects anchor tag -->
     <a id="projects"></a>
     <projects />
-  </div>
+    <!-- <a id="resume"></a> -->
+    <!-- <resume /> -->
+  </section>
 </template>
 
 <script>
 import VueLogo from "~/assets/img/vue-logo.svg";
 import Photo from "~/components/Photo.vue";
 import Projects from "~/components/Projects.vue";
-import PortfolioLinks from "~/components/PortfolioLinks.vue";
-import PortfolioLinksMobile from "~/components/PortfolioLinksMobile.vue";
+import Resume from "~/components/Resume.vue";
 
 export default {
   components: {
     Photo,
     Projects,
-    PortfolioLinks
+    Resume
   },
   data() {
     return {
