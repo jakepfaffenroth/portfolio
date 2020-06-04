@@ -1,5 +1,5 @@
 <template>
-  <section class="flex m-8 h-screen space-x-12 justify-center text-center">
+  <section class="flex p-8 h-screen bg-gray-800 space-x-12 justify-center text-center">
     <div v-for="project in projects" :key="project.name" class="project">
       <a @click="openModal(project)">
         <img :src="project.image" class="mb-4" />
@@ -72,7 +72,7 @@ export default {
 
 <style>
 .project {
-  @apply p-2 w-64 border rounded shadow-sm transition duration-150 ease-in-out;
+  @apply p-2 w-64 bg-white border rounded shadow-sm transition duration-150 ease-in-out;
   height: 28rem;
 }
 
