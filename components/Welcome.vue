@@ -1,7 +1,5 @@
 <template>
-  <section class="h-screen sm:px-8 md:px-16 lg:px-48">
-
-
+  <section class="sm:px-8 md:px-16 lg:px-48">
     <div id="hello" class="flex px-4 sm:px-0 sm:pt-12 space-x-12">
       <photo
         class="col-start-1 hidden sm:block self-start h-auto w-auto sm:h-56 sm:w-56 mt-2 rounded-full"
@@ -29,7 +27,7 @@
       </div>
     </div>
     <!-- Tech Stack Row -->
-    <div id="stack" class="stack w-full sm:px-8 space-x-6">
+    <div id="stack" class="stack px-20 md:px-24 lg:px-32 xl:px-48 space-x-6">
       <p class="p-1 sm:p-2" v-for="tech in techStack" :key="tech">
         {{ tech.name }}
       </p>
@@ -46,12 +44,14 @@ export default {
   },
   data() {
     return {
-      
       techStack: {
         html5: { name: "HTML5", img: "" },
         css3: { name: "CSS3", img: "" },
         js: { name: "Javascript", img: "" },
         vue: { name: "Vue.js", img: "" },
+        tailwind: { name: "Tailwind.css", img: "" },
+        bootstrap: { name: "Bootstrap", img: "" },
+        chartjs: { name: "Chart.js", img: "" },
         express: { name: "Express", img: "" },
         nodejs: { name: "Node.js", img: "" },
         mongodb: { name: "MongoDb", img: "" },
@@ -74,4 +74,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.stack {
+  @apply flex flex-wrap mt-24 justify-center w-full;
+}
+</style>

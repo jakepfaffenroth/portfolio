@@ -66,10 +66,6 @@ h5 {
   grid-template-rows: 1fr, 3fr;
 }
 
-.stack {
-  @apply flex flex-wrap px-2 justify-center;
-}
-
 /* Page transitions */
 .slide-enter {
   transform: translate(-2em, 0);

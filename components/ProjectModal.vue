@@ -1,12 +1,36 @@
 <template>
   <div>
     <div class="project-modal">
-      <img :src="project.image" />
-      <div class='text-content'>
+      <button @click="$emit('hideModal')" class="exitBtn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="white"
+          stroke="currentColor"
+          stroke-width="1.25"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-x-circle"
+        >
+          <circle class="circle" cx="12" cy="12" r="10"></circle>
+          <line class="line" x1="15" y1="9" x2="9" y2="15"></line>
+          <line class="line" x1="9" y1="9" x2="15" y2="15"></line>
+        </svg>
+      </button>
+      <img :src="project.image" class="project-image" />
+      <div class="project-text">
         <h2 class="text-3xl">{{ project.title }}</h2>
-        <p>{{project.notes}}</p>
+        <p>{{ project.notes }}</p>
         <!-- <p class='mt-2 font-normal'>Build with:</p> -->
-        <p class='mt-4 font-normal'>{{project.stack}}</p>
+        <p class="mt-4 font-normal">{{ project.stack }}</p>
+        <div class="project-links">
+          <a :href="project.live" target="_blank" class="link-live"> Live </a>
+          <a :href="project.gitHub" target="_blank" class="link-github">
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
     <div class="overlay" @click="$emit('hideModal')"></div>
@@ -28,11 +52,42 @@ export default {
 }
 
 .project-modal {
-  @apply absolute mt-24 left-0 right-0 m-auto z-50 bg-white border shadow;
-  max-width: 60vw;
+  @apply absolute top-0 left-0 right-0 mx-auto z-50 h-full bg-white border rounded shadow-lg;
+  margin-top: 5vh;
+  width:700px;
+  max-width: 80vh;
+  max-height: 90vh;
 }
 
-.text-content{
-  @apply m-4 font-light
+.project-image {
+  margin: auto;
+  max-height: 50vh;
+}
+
+.project-text {
+  @apply m-4 h-full font-light;
+  /* max-height: 30vh; */
+}
+
+.project-links {
+  @apply flex mx-6 my-2 justify-around;
+}
+
+.exitBtn {
+  @apply absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+}
+
+.feather-x-circle:hover .circle {
+  @apply cursor-pointer;
+  fill: red;
+  /* stroke: white; */
+}
+
+.feather-x-circle:hover .line {
+  @apply cursor-pointer;
+  stroke: white;
+  /* stroke: white; */
 }
 </style>
