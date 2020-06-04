@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="flex flex-wrap h-screen sm:px-8 md:px-16 lg:px-48">
+    <section class="h-screen sm:px-8 md:px-16 lg:px-48">
       <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lato:wght@100;300;400;700&display=swap"
         rel="stylesheet"
