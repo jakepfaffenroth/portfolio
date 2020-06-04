@@ -1,5 +1,5 @@
 <template>
-  <section class="flex p-8 h-screen bg-gray-800 space-x-12 justify-center text-center">
+  <section class="flex p-8 h-screen space-x-12 justify-center text-center">
     <div v-for="project in projects" :key="project.name" class="project">
       <a @click="openModal(project)">
         <img :src="project.image" class="mb-4" />
@@ -26,7 +26,7 @@
 <script>
 import WeatherImg from "~/assets/img/weather-app-ss.png";
 import DrawImg from "~/assets/img/draw-ss.png";
-import ProjectModal from "./ProjectModal.vue";
+import ProjectModal from "~/components/ProjectModal.vue";
 
 export default {
   components: {
