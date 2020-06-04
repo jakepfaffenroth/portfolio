@@ -25,27 +25,26 @@
         </a>
       </nav>
     </header>
-    <div id="hello" class="h-full flex px-4 sm:px-0 sm:pt-12 ">
+
+    <div id="hello" class="h-full flex px-4 sm:px-0 sm:pt-12 space-x-12">
       <photo
-        class="hidden sm:block self-start h-24 w-24 sm:h-64 sm:w-64 mr-12 sm:mt-8 lg:mt-4 rounded-full"
+        class="col-start-1 hidden sm:block self-start h-auto w-auto sm:h-56 sm:w-56 mt-2 rounded-full"
       />
       <div
         id="hello-text"
-        class="lg:pr-32 md:text-md font-light font-body text-gray-900"
+        class="col-start-2 lg:pr-32 md:text-md font-light font-body text-gray-900"
       >
-        <h1 class="text-3xl sm:text-4xl font-display  ">
+        <p class="text-3xl sm:text-4xl font-display  ">
           Hello
-        </h1>
+        </p>
         <p>
           I'm a full stack web developer with diverse range of experience
-          including higher education, non-profit leadership, and          photography. I'm interested in lots of things, and when I want to
-          learn something I dive in head-first. In 2018 I completed a Ph.D. in
-          Anthropology and, after teaching in higher education for several
+          including higher education, non-profit leadership, and photography. I'm interested in lots of things, and when I want to learn something I dive in head-first. In 2018 I completed a Ph.D. in Anthropology and, after teaching in higher education for several
           years, decided to pursue web development.
         </p>
         <br />
         <p>
-          I'm passionate about learning new skills and science education.
+          I'm passionate about learning new skills and science education.<br><br><br>
         </p>
         <!-- <portfolio-links class="flex mt-6 justify-center space-x-4" /> -->
       </div>
@@ -133,6 +132,11 @@ h3,
 h4,
 h5 {
   @apply font-display;
+}
+
+#hello {
+  display: grid;
+  grid-template-rows: 1fr, 3fr
 }
 
 .stack {
