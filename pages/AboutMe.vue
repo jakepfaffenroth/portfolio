@@ -14,6 +14,11 @@ import Navbar from "~/components/Nav.vue";
 export default {
   components: {
     Navbar
+  },
+  head(){
+    return{
+      title: 'Jake Pfaffenroth - About Me'
+    }
   }
 };
 </script>

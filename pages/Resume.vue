@@ -57,6 +57,11 @@
 
 <script>
 export default {
+  head(){
+    return{
+      title: 'Jake Pfaffenroth - Resume'
+    }
+  },
   data() {
     return {
       isVisible: false,

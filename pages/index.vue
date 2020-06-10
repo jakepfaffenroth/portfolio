@@ -39,6 +39,11 @@
 import Photo from "~/components/Photo.vue";
 
 export default {
+  head(){
+    return{
+      title: 'Jake Pfaffenroth'
+    }
+  },
   components: {
     Photo
     // AboutMe,

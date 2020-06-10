@@ -31,6 +31,11 @@ import PortfolioImg from "~/assets/img/portfolio-ss.png";
 import ProjectModal from "~/components/ProjectModal.vue";
 
 export default {
+  head(){
+    return{
+      title: 'Jake Pfaffenroth - Projects'
+    }
+  },
   components: {
     Navbar,
     ProjectModal
@@ -44,7 +49,7 @@ export default {
           title: "Weather App",
           image: WeatherImg,
           stack: "Vue.js, Tailwind.css, Chart.js",
-          notes: `I was dissatisfied by existing weather apps (mobile and desktop), so I built the one I wanted. I designed it to be clean and modern with efficient data presentation.
+          notes: `I was dissatisfied by existing weather apps (mobile and desktop), so I built the one I wanted. I designed it to be clean, modern, and fully responsive with efficient data presentation.
           It was built using Vue.js, Tailwind.css, & Chart.js. Weather data is from Climacell.
           Geolocation data is from HERE.`,
           gitHub: "https://www.github.com/jakepfaffenroth/weather-app",
@@ -54,7 +59,7 @@ export default {
           title: "Portfolio",
           image: PortfolioImg,
           stack: "Vue.js/Nuxt, Tailwind.css",
-          notes: "My personal portfolio",
+          notes: "My personal portfolio. Responsive SPA with basic routing and page transitions.",
           gitHub: "https://www.github.com/jakepfaffenroth/portfolio"
         },
         draw: {
@@ -62,7 +67,7 @@ export default {
           image: DrawImg,
           stack: "HTML, CSS, JS",
           notes:
-            "A simple drawing app with a simple name. Built in plain HTML, Javascript, and CSS.",
+            "A simple drawing app. Built in plain HTML, Javascript, and CSS.",
           gitHub: "https://www.github.com/jakepfaffenroth/Draw",
           live: "https://draw.jakepfaf.dev"
         }
