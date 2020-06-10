@@ -55,7 +55,7 @@ export default {
         express: { name: "Express", img: "" },
         nodejs: { name: "Node.js", img: "" },
         mongodb: { name: "MongoDb", img: "" },
-        sql: { name: "SQL", img: "" }
+        firebase: { name: "Firebase", img: "" },
       },
       techStackFE: {
         html5: { name: "HTML5", img: "" },

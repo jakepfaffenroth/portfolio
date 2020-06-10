@@ -26,6 +26,7 @@
 <script>
 import WeatherImg from "~/assets/img/weather-app-ss.png";
 import DrawImg from "~/assets/img/draw-ss.png";
+import PortfolioImg from "~/assets/img/portfolio-ss.png";
 import ProjectModal from "~/components/ProjectModal.vue";
 
 export default {
@@ -46,6 +47,13 @@ export default {
           Geolocation data is from HERE.`,
           gitHub: "https://www.github.com/jakepfaffenroth/weather-app",
           live: "https://weather.jakepfaf.dev"
+        },
+        portfolio: {
+          title: "Portfolio",
+          image: PortfolioImg,
+          stack: "Vue.js/Nuxt, Tailwind.css",
+          notes: "My personal portfolio",
+          gitHub: "https://www.github.com/jakepfaffenroth/portfolio"
         },
         draw: {
           title: "Draw",

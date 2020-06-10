@@ -16,6 +16,7 @@
 <script>
 import Navbar from "~/components/Nav.vue";
 import Welcome from "~/components/Welcome.vue";
+import AboutMe from "~/components/AboutMe.vue";
 import Projects from "~/components/Projects.vue";
 import Resume from "~/components/Resume.vue";
 
@@ -23,11 +24,13 @@ export default {
   components: {
     Navbar,
     Welcome,
+    AboutMe,
     Projects,
     Resume
   },
   data() {
     return {
+      // Loads 'Welcome' component on initial site load
       view: "Welcome"
     };
   }

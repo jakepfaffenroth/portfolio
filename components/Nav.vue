@@ -35,13 +35,13 @@ export default {
   data() {
     return {
       navLinks: {
-        me: { id: "welcome", name: "Me", link: "" },
+        aboutMe: { id: "aboutMe", name: "About Me", link: "" },
+        projects: { id: "projects", name: "Projects", link: "" },
         gitHub: {
           id: "github",
           name: "GitHub",
           link: "https://www.github.com/jakepfaffenroth"
         },
-        projects: { id: "projects", name: "Projects", link: "" },
         resume: { id: "resume", name: "Resume", link: "" },
         email: {
           id: "email",
