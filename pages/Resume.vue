@@ -47,7 +47,7 @@
         Details
       </p> -->
       <transition name="fold" mode="out-in">
-        <ul class="mr-32" v-for="li in job.ul" :key="li" >
+        <ul class="mr-32" v-for="li in job.ul" :key="li">
           <li>{{ li }}</li>
         </ul>
       </transition>
@@ -174,35 +174,4 @@ li {
   @apply mt-2 text-sm;
 }
 
-/* Detail transitions */
-.details-visible {
-  display: block;
-}
-.details-hidden {
-  display: none;
-}
-
-.fold-enter {
-  transform: translate(0, -2em);
-  opacity: 0;
-}
-
-.fold-enter-to,
-.fold-leave {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.fold-leave-to {
-  transform: translate(0, -2em);
-  opacity: 0;
-}
-
-.fold-enter-active,
-.fold-leave-active {
-  transition-duration: 0.05s;
-  transition-property: height, opacity, transform;
-  /* transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1); */
-  overflow: hidden;
-}
 </style>

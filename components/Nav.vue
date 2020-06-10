@@ -6,9 +6,10 @@
       <!-- <photo class="block sm:hidden h-20 w-20 mx-12 rounded-full" /> -->
 
       <div class="self-center">
-        <button @click="followLink('', 'welcome')" class="text-xl font-bold">
+        <nuxt-link to="/" class="text-xl font-bold">Jake Pfaffenroth</nuxt-link>
+        <!-- <button @click="followLink('', 'welcome')" class="text-xl font-bold">
           Jake Pfaffenroth
-        </button>
+        </button> -->
         <p class="font-normal">Full stack web developer</p>
       </div>
     </div>
@@ -16,15 +17,16 @@
     <!-- Navbar links -->
     <!-- TODO - Make responsive compact menu -->
     <div class="space-x-6">
-      <a v-for="(value, name, index) in navLinks" :key="value">
-        <button
+      <a v-for="(value, name, index) in navLinks" :key="index">
+        <nuxt-link :to="value.link">{{ value.name }}</nuxt-link>
+        <!-- <button
           @click="followLink(value.link, value.id)"
           :id="'nav-link-' + index"
           :href="value.link"
           class="nav-links"
         >
           {{ value.name }}
-        </button>
+        </button> -->
       </a>
     </div>
   </nav>
@@ -35,14 +37,14 @@ export default {
   data() {
     return {
       navLinks: {
-        aboutMe: { id: "aboutMe", name: "About Me", link: "" },
-        projects: { id: "projects", name: "Projects", link: "" },
+        aboutMe: { id: "aboutMe", name: "About Me", link: "/aboutme" },
+        projects: { id: "projects", name: "Projects", link: "/projects" },
         gitHub: {
           id: "github",
           name: "GitHub",
           link: "https://www.github.com/jakepfaffenroth"
         },
-        resume: { id: "resume", name: "Resume", link: "" },
+        resume: { id: "resume", name: "Resume", link: "/resume" },
         email: {
           id: "email",
           name: "hello@jakepfaf.dev",

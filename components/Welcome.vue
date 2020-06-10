@@ -28,7 +28,7 @@
     </div>
     <!-- Tech Stack Row -->
     <div id="stack" class="stack px-20 md:px-24 lg:px-32 xl:px-48 space-x-6">
-      <p class="p-1 sm:p-2" v-for="tech in techStack" :key="tech">
+      <p class="p-1 sm:p-2" v-for="tech in techStack" :key="tech.name">
         {{ tech.name }}
       </p>
     </div>
