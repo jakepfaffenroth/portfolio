@@ -3,13 +3,8 @@
     class="sticky mx-8 sm:flex justify-between pt-4 space-y-4 sm:space-y-0 bg-white text-center font-display"
   >
     <div class="flex sm:block">
-      <!-- <photo class="block sm:hidden h-20 w-20 mx-12 rounded-full" /> -->
-
       <div class="self-center">
         <nuxt-link to="/" class="text-xl font-bold">Jake Pfaffenroth</nuxt-link>
-        <!-- <button @click="followLink('', 'welcome')" class="text-xl font-bold">
-          Jake Pfaffenroth
-        </button> -->
         <p class="font-normal">Full stack web developer</p>
       </div>
     </div>
@@ -17,54 +12,21 @@
     <!-- Navbar links -->
     <!-- TODO - Make responsive compact menu -->
     <div class="space-x-6">
-      <a v-for="(value, name, index) in navLinks" :key="index">
-        <nuxt-link :to="value.link">{{ value.name }}</nuxt-link>
-        <!-- <button
-          @click="followLink(value.link, value.id)"
-          :id="'nav-link-' + index"
-          :href="value.link"
-          class="nav-links"
-        >
-          {{ value.name }}
-        </button> -->
-      </a>
+      <nuxt-link to="/aboutme" class="nav-links">About Me</nuxt-link>
+      <nuxt-link to="/projects" class="nav-links">Projects</nuxt-link>
+      <a href="https://www.github.com/jakepfaffenroth" class="nav-links"
+        >GitHub</a
+      >
+      <nuxt-link to="/resume" class="nav-links">Resume</nuxt-link>
+      <a href="mailto:hello@jakepfaf.dev" class="nav-links"
+        >hello@jakepfaf.dev</a
+      >
     </div>
   </nav>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      navLinks: {
-        aboutMe: { id: "aboutMe", name: "About Me", link: "/aboutme" },
-        projects: { id: "projects", name: "Projects", link: "/projects" },
-        gitHub: {
-          id: "github",
-          name: "GitHub",
-          link: "https://www.github.com/jakepfaffenroth"
-        },
-        resume: { id: "resume", name: "Resume", link: "/resume" },
-        email: {
-          id: "email",
-          name: "hello@jakepfaf.dev",
-          link: "mailto:hello@jakepfaf.dev"
-        }
-      }
-    };
-  },
-  methods: {
-    followLink(link, id) {
-      if (link.match(/mailto/)) {
-        return (window.location.href = link);
-      } else if (link && link.match(/mailto/) == null) {
-        return window.open(link);
-      } else {
-        this.$emit("change-page", id);
-      }
-    }
-  }
-};
+export default {};
 </script>
 
 <style>
