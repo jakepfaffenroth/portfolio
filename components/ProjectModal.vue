@@ -19,13 +19,15 @@
           <line class="line" x1="9" y1="9" x2="15" y2="15"></line>
         </svg>
       </button>
-      <img :src="project.image" class="project-image" />
-      <div class="project-text">
+      <img :src="project.image" class="modal-image" />
+      <div class="modal-text">
         <h2 class="text-3xl">{{ project.title }}</h2>
-        <p>{{ project.notes }}</p>
+        <h3 class="text-xl">{{ project.subtitle }}</h3>
+        <p class='mt-4'>{{ project.notes }}</p>
         <!-- <p class='mt-2 font-normal'>Build with:</p> -->
-        <p class="mt-4 font-normal">{{ project.stack }}</p>
-        <div class="project-links">
+        <p class="mt-4 font-light text-sm">Built with</p>
+        <p class="font-normal">{{ project.stack }}</p>
+        <div class="modal-links">
           <a :href="project.live" target="_blank" class="link-live"> Live </a>
           <a :href="project.gitHub" target="_blank" class="link-github">
             GitHub
@@ -52,25 +54,25 @@ export default {
 }
 
 .project-modal {
-  @apply absolute top-0 left-0 right-0 mx-auto z-50 h-full bg-white border rounded shadow-lg;
+  @apply absolute flex flex-wrap top-0 left-0 right-0 mx-auto z-50 h-full bg-white border rounded shadow-lg transition-all duration-300 ease-in-out;
   margin-top: 5vh;
   width:700px;
   max-width: 80vh;
   max-height: 90vh;
 }
 
-.project-image {
-  margin: auto;
-  max-height: 50vh;
+.modal-image {
+  margin: 0 auto;
+  max-height: 50%;
 }
 
-.project-text {
+.modal-text {
   @apply m-4 h-full font-light;
   /* max-height: 30vh; */
 }
 
-.project-links {
-  @apply flex mx-6 my-2 justify-around;
+.modal-links {
+  @apply flex self-end mx-6 my-2 justify-around;
 }
 
 .exitBtn {
@@ -80,7 +82,7 @@ export default {
 }
 
 .feather-x-circle:hover .circle {
-  @apply cursor-pointer;
+  @apply cursor-pointer transition duration-100 ;
   fill: red;
   /* stroke: white; */
 }

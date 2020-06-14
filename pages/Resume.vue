@@ -26,7 +26,7 @@
         </div>
         <div class="text-sm text-right">
           <p>{{ job.date }}</p>
-          <p>{{ job.location }}</p>
+          <!-- <p>{{ job.location }}</p> -->
         </div>
       </div>
       <!-- <p class="flex text-sm" @click="isVisible = !isVisible">
@@ -46,28 +46,39 @@
         </svg>
         Details
       </p> -->
-      <transition name="fold" mode="out-in">
-        <ul class="mr-32" v-for="li in job.ul" :key="li">
-          <li>{{ li }}</li>
-        </ul>
-      </transition>
+      <ul class="mr-32" v-for="li in job.ul" :key="li">
+        <li>{{ li }}</li>
+      </ul>
+      <!-- <transition name="fold" mode="out-in">
+      </transition> -->
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  head(){
-    return{
-      title: 'Jake Pfaffenroth - Resume'
-    }
+  head() {
+    return {
+      title: "Jake Pfaffenroth - Resume"
+    };
   },
   data() {
     return {
       isVisible: false,
       jobs: {
+        0: {
+          header: "EXPERIENCE",
+          title: "Museum & Preservation Specialist",
+          employer: "Western Washington University",
+          date: "2019 to present",
+          location: "Bellingham, WA",
+          ul: {
+            1: "I developed a MS Access application for managing museum collection records in the Department of Anthropology. This filled a need for a flexible and powerful, yet very user-friendly and maintainable, solution. Features include user authentication and permissions, record change history tracking, file storage, and relational database CRUD functionality.",
+            2: "VIEW PROJECT"
+          }
+        },
         1: {
-          header: "EMPLOYMENT HISTORY",
+          header: "",
           title: "Non-Tenure Track Faculty",
           employer: "Western Washington University",
           date: "2018 to present",
@@ -121,7 +132,7 @@ export default {
         },
         6: {
           header: "",
-          title: "Chair, Web and Social Media Committee",
+          title: "Chair - Web and Social Media Committee",
           employer: "Wisconsin Archeological Society",
           date: "2012-2016",
           location: "Madison, WI",
@@ -131,8 +142,8 @@ export default {
         },
         7: {
           header: "",
-          title: "Director and Secretery",
-          employer: "Wisconsin Archeologicla Society",
+          title: "Board Member",
+          employer: "Wisconsin Archeological Society",
           date: "2010-2016",
           location: "Madison, WI",
           ul: {
@@ -178,5 +189,4 @@ ul {
 li {
   @apply mt-2 text-sm;
 }
-
 </style>
