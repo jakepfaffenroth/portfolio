@@ -4,7 +4,7 @@
       <!-- full nav bar -->
       <div class="flex sm:block">
         <div class="text-left self-center">
-          <nuxt-link to="/" class="text-xl font-bold">
+          <nuxt-link to="/" class="title text-xl font-bold">
             Jake Pfaffenroth
             <span class="text-sm font-thin" v-if="$route.name !== 'index'">
               / {{ $route.name.toLowerCase() }}</span
@@ -37,12 +37,12 @@
       <div class="hidden md:block space-x-6 self-center">
         <!-- <nuxt-link to="/aboutme" class="nav-links">About Me</nuxt-link> -->
         <nuxt-link to="/projects" class="nav-links">Projects</nuxt-link>
-        <a href="https://www.github.com/jakepfaffenroth" class="nav-links"
+        <a href="https://www.github.com/jakepfaffenroth" target='blank' class="nav-links"
           >GitHub</a
         >
         <nuxt-link to="/skills" class="nav-links">Skills</nuxt-link>
         <nuxt-link to="/resume" class="nav-links">Resume</nuxt-link>
-        <a href="mailto:hello@jakepfaf.dev" class="nav-links"
+        <a href="mailto:hello@jakepfaf.dev" target='blank' class="nav-links"
           >hello@jakepfaf.dev</a
         >
       </div>
@@ -50,7 +50,7 @@
     <!-- Mobile menu -->
     <transition name="drop">
       <div
-        class="md:hidden w-screen flex flex-wrap justify-around mt-0 px-2 py-3 bg-white text-sm font-light shadow z-40"
+        class="md:hidden w-screen flex flex-wrap justify-around mt-0 px-2 py-3 bg-white text-sm font-light shadow z-40 "
       >
         <!-- <nuxt-link to="/aboutme" class="nav-links">About Me</nuxt-link> -->
         <nuxt-link to="/projects" class="nav-links">Projects</nuxt-link>
@@ -83,12 +83,21 @@ export default {
 </script>
 
 <style>
+/* .title:hover {
+  @apply cursor-pointer border-b-2 border-blue-500 transition duration-100 ease-in-out;
+} */
+
 .nav {
   @apply sticky mx-5 justify-between pt-4 bg-white text-center font-display;
 }
 
+/* Transparent bottom border to preserve spacing when blue b-border is applied on hover */
 .nav-links {
-  @apply cursor-pointer;
+  @apply cursor-pointer border-b-2 border-transparent;
+}
+
+.nav-links:hover {
+  @apply border-b-2 border-blue-500 transition duration-150 ease-in-out;
 }
 
 /* Page transitions */
