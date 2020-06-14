@@ -1,12 +1,12 @@
 <template>
   <!-- TODO - add skills section to col-4 or cut the grid entirely -->
   <!-- Make responsive -->
-  <section class="grid grid-cols-4 m-8 h-screen font-light space-y-6">
+  <section class="grid grid-cols-4 m-6 sm:m-8 font-light space-y-6">
     <div class="col-start-1  col-span-4">
       <h3 class="resume-header">EDUCATION</h3>
       <div class="content-block">
         <div>
-          <p class="font-normal">Ph.D. - Anthropology</p>
+          <h3 class="font-normal">Ph.D. - Anthropology</h3>
           <p class="italic">University of Wisconsin - Madison</p>
           <!-- <p class="relative right-0">2018</p> -->
         </div>
@@ -20,7 +20,7 @@
       <h3 class="resume-header" v-if="job.header">{{ job.header }}</h3>
       <div class="content-block">
         <div>
-          <p class="font-normal">{{ job.title }}</p>
+          <h3 class="job-title">{{ job.title }}</h3>
           <p class="italic">{{ job.employer }}</p>
           <p></p>
         </div>

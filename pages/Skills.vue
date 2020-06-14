@@ -1,5 +1,5 @@
 <template>
-  <section class="ml-10 mr-8 my-8">
+  <section class="ml-10 mr-8 my-8 md:px-16 lg:px-32 xl:px-64">
     <!-- <h1 class="text-2xl border-b mb-4">Skills</h1> -->
     <div class=" grid grid-cols-3">
       <div class="col-start-1">

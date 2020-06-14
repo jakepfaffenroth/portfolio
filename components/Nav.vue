@@ -37,33 +37,58 @@
       <div class="hidden md:block space-x-6 self-center">
         <!-- <nuxt-link to="/aboutme" class="nav-links">About Me</nuxt-link> -->
         <nuxt-link to="/projects" class="nav-links">Projects</nuxt-link>
-        <a href="https://www.github.com/jakepfaffenroth" target='blank' class="nav-links"
+        <a
+          href="https://www.github.com/jakepfaffenroth"
+          target="blank"
+          class="nav-links"
           >GitHub</a
         >
         <nuxt-link to="/skills" class="nav-links">Skills</nuxt-link>
         <nuxt-link to="/resume" class="nav-links">Resume</nuxt-link>
-        <a href="mailto:hello@jakepfaf.dev" target='blank' class="nav-links"
+        <a href="mailto:hello@jakepfaf.dev" target="blank" class="nav-links"
           >hello@jakepfaf.dev</a
         >
       </div>
     </nav>
     <!-- Mobile menu -->
-    <transition name="drop">
-      <div
-        class="md:hidden w-screen flex flex-wrap justify-around mt-0 px-2 py-3 bg-white text-sm font-light shadow z-40 "
+    <div
+      class="md:hidden w-screen flex flex-wrap justify-around mt-0 px-2 py-3 text-sm font-light shadow"
+    >
+      <!-- <nuxt-link to="/aboutme" class="nav-links">About Me</nuxt-link> -->
+      <nuxt-link to="/projects" class="nav-links">Projects</nuxt-link>
+      <a
+        href="https://www.github.com/jakepfaffenroth"
+        target="blank"
+        class="nav-links"
+        >GitHub</a
       >
-        <!-- <nuxt-link to="/aboutme" class="nav-links">About Me</nuxt-link> -->
-        <nuxt-link to="/projects" class="nav-links">Projects</nuxt-link>
-        <a href="https://www.github.com/jakepfaffenroth" class="nav-links"
-          >GitHub</a
-        >
-        <nuxt-link to="/skills" class="nav-links">Skills</nuxt-link>
-        <nuxt-link to="/resume" class="nav-links">Resume</nuxt-link>
-        <a href="mailto:hello@jakepfaf.dev" class="nav-links"
-          >hello@jakepfaf.dev</a
-        >
-      </div>
-    </transition>
+      <nuxt-link to="/skills" class="nav-links">Skills</nuxt-link>
+      <nuxt-link to="/resume" class="nav-links">Resume</nuxt-link>
+      <a href="mailto:hello@jakepfaf.dev" target="blank" class="nav-links"
+        >hello@jakepfaf.dev</a
+      >
+    </div>
+    <!-- 'Scroll to top' button -->
+    <!-- <button
+      class="md:hidden fixed bottom-0 right-0 m-4 p-1 border rounded-full bg-blue-500 text-white shadow"
+      @click.native="scrollToTop()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-arrow-up"
+      >
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button> -->
   </div>
 </template>
 
@@ -71,14 +96,14 @@
 export default {
   data() {
     return {
-      isMobileMenuOpen: false,
+      isMobileMenuOpen: false
     };
   },
   methods: {
-    openMenu() {
-      this.isMobileMenuOpen = !this.isMobileMenuOpen;
-    }
-  },
+    // scrollToTop() {
+    //   window.scrollTo(0, 0);
+    // }
+  }
 };
 </script>
 
