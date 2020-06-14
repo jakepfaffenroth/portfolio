@@ -11,7 +11,7 @@
       Projects
     </nuxt-link>
     <a href="mailto:hello@jakepfaf.dev" class="btn btn-yellow">
-      Email me
+      Email Me
     </a>
   </div>
 </template>

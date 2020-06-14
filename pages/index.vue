@@ -15,14 +15,19 @@
           Hello
         </p>
         <p>
-          I'm a full stack web developer with a Ph.D. in anthropology. I have
-          experience in higher education, non-profit leadership, and small
-          business.
+          I'm a full stack web developer with a social science Ph.D. I love
+          finding creative solutions to problems, I'm motivated to continuously
+          learn, and I have a proven history of self-teaching diverse subject
+          matter.
         </p>
-        <br />
+        <p class='py-4'>
+          My professional experience spans higher education, non-profit
+          leadership, and small business, and I've be creating web solutions in
+          these fields since 2012. The sites I create are responsive and modern
+          with intuitive, asthetic design.
+        </p>
         <p>
-          I develop responsive web apps with intuitive, modern user
-          experiences.<br /><br /><br />
+          Thanks for visiting.
         </p>
         <!-- <portfolio-links class="flex mt-6 justify-center space-x-4" /> -->
       </div>
@@ -30,7 +35,7 @@
     <!-- Tech Stack Row -->
     <div
       id="stack"
-      class="stack px-8 sm:mt-20 md:px-24 lg:px-32 xl:px-48 space-x-6"
+      class="stack px-8 mt-4 sm:mt-20 md:px-24 lg:px-32 xl:px-48 space-x-6"
     >
       <p class="p-1 sm:p-2" v-for="tech in techStack" :key="tech.name">
         {{ tech.name }}
