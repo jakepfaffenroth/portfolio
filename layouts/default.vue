@@ -1,13 +1,25 @@
 <template>
   <div>
-    <nuxt />
+    <navbar />
+    <transition appear name="slide" mode="out-in">
+      <nuxt />
+    </transition>
   </div>
 </template>
 
+<script>
+import Navbar from "~/components/Nav.vue";
+export default {
+  components: {
+    Navbar
+  }
+};
+</script>
+
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -51,5 +63,30 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+/* Page transitions */
+.slide-enter {
+  transform: translate(-2em, 0);
+  opacity: 0;
+}
+
+.slide-enter-to,
+.slide-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.slide-leave-to {
+  transform: translate(2em, 0);
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition-duration: 0.1s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
 }
 </style>

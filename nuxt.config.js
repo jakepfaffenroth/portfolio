@@ -16,6 +16,7 @@ module.exports = {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "" }],
     link: [
+      { rel: "icon", type: "image/x-icon", href: "" },
       {
         rel: "stylesheet",
         href:
