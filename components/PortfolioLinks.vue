@@ -1,5 +1,5 @@
 <template>
-  <div id="links" class='text-center'>
+  <div id="links" class=' m-8 text-center space-x-4'>
     <a
       href="https://github.com/jakepfaffenroth"
       target="_blank"
@@ -7,9 +7,9 @@
     >
       GitHub
     </a>
-    <a href="#projects" class="btn btn-orange">
+    <nuxt-link to="projects" class="btn btn-orange">
       Projects
-    </a>
+    </nuxt-link>
     <a href="mailto:hello@jakepfaf.dev" class="btn btn-yellow">
       Email me
     </a>

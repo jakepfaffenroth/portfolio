@@ -8,7 +8,7 @@
         id="hello-text"
         class="sm:col-start-2 lg:pr-32 md:text-md font-light font-body text-gray-900 text-center sm:text-left "
       >
-        <p class="text-3xl sm:text-4xl font-display  ">
+        <p class="my-2 sm:mt-0 text-3xl sm:text-4xl font-display  ">
           Hello
         </p>
         <p>
@@ -26,16 +26,18 @@
       </div>
     </div>
     <!-- Tech Stack Row -->
-    <div id="stack" class="stack px-8 sm:mt-24 md:px-24 lg:px-32 xl:px-48 space-x-6">
+    <div id="stack" class="stack px-8 sm:mt-20 md:px-24 lg:px-32 xl:px-48 space-x-6">
       <p class="p-1 sm:p-2" v-for="tech in techStack" :key="tech.name">
         {{ tech.name }}
       </p>
     </div>
+    <portfolio-links />
   </section>
 </template>
 
 <script>
 import Photo from "~/components/Photo.vue";
+import PortfolioLinks from "~/components/PortfolioLinks.vue";
 
 export default {
   head() {
@@ -44,7 +46,8 @@ export default {
     };
   },
   components: {
-    Photo
+    Photo,
+    PortfolioLinks
     // AboutMe,
     // Projects,
     // Resume
