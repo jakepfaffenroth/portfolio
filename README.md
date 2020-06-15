@@ -1,22 +1,11 @@
-# portfolio
+# My Portfolio
 
-> Web Developement Portfolio of Jake Pfaffenroth
+> Portfolio of Jake Pfaffenroth
 
-## Build Setup
+Created in Vue using Nuxt for simple setup.
 
-```bash
-# install dependencies
-$ npm install
+My site is a SPA with basic routing and page transitions.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+It's styled using Tailwind.css.
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Icons are [Feather Icons](https://feathericons.com/)
