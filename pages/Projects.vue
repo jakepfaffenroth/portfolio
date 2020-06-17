@@ -74,6 +74,7 @@
 import Navbar from "~/components/Nav.vue";
 import WeatherImg from "~/assets/img/weather-app-ss.png";
 import DrawImg from "~/assets/img/draw-ss.png";
+import FoodTrucksImg from "~/assets/img/food-truck-ss.png";
 import PortfolioImg from "~/assets/img/portfolio-ss.png";
 import ProjectModal from "~/components/ProjectModal.vue";
 
@@ -103,6 +104,14 @@ export default {
           Geolocation data is from HERE.`,
           gitHub: "https://www.github.com/jakepfaffenroth/weather-app",
           live: "https://weather.jakepfaf.dev"
+        },
+        FoodTruck: {
+          title: "Food Trucks (Native)",
+          image: FoodTrucksImg,
+          stack: "React Native, Node.js, Express, MongoDB",
+          snippet:
+            "Team project. I wrote MongoDB data model and account/truck creation, backend user auth, & map display. Users browse/interact with nearby food trucks.",
+          gitHub: "https://github.com/phil4lif/FoodTruck"
         },
         portfolio: {
           title: "Portfolio",
@@ -146,7 +155,11 @@ export default {
 .project-card {
   @apply flex mt-8 mx-2 bg-white border rounded shadow-lg overflow-hidden;
   width: 400px;
-  height: 200px;
+  height: 250px;
+}
+
+.project-card:hover {
+  @apply shadow-xl
 }
 
 .project-card:hover .link-live {
@@ -159,13 +172,13 @@ export default {
 }
 
 .project-image {
-  @apply object-cover object-left-top;
-  width: 40%;
+  @apply object-cover object-left-top border-r;
+  width: 45%;
 }
 .text-area {
   @apply relative py-2 px-4 w-full;
   display: grid;
-  grid-template-rows: 25% auto auto 11%;
+  grid-template-rows: 20% auto auto 11%;
 }
 
 .project-title {
