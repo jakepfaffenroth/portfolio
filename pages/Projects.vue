@@ -110,7 +110,7 @@ export default {
           image: FoodTrucksImg,
           stack: "React Native, Node.js, Express, MongoDB",
           snippet:
-            "Team project. I wrote MongoDB data model, account/truck creation, backend auth, & map display. Users browse/interact with nearby food trucks.",
+            "Explore nearby food trucks. Team project - I'm responsible for MongoDB data model, user & truck creation, backend auth, map interaction, & UI design.",
           gitHub: "https://github.com/phil4lif/FoodTruck"
         },
         portfolio: {
