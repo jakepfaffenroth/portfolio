@@ -20,7 +20,7 @@
               xmlns="http://www.w3.org/2000/svg"
               width="14"
               height="14"
-              viewBox="0 0 27 27"
+              viewBox="0 0 26 22"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
@@ -41,7 +41,7 @@
               xmlns="http://www.w3.org/2000/svg"
               width="14"
               height="14"
-              viewBox="0 0 26 26"
+              viewBox="0 0 26 21"
               fill="currentColor"
               stroke="currentColor"
               stroke-width="2"
@@ -110,7 +110,7 @@ export default {
           image: FoodTrucksImg,
           stack: "React Native, Node.js, Express, MongoDB",
           snippet:
-            "Team project. I wrote MongoDB data model and account/truck creation, backend user auth, & map display. Users browse/interact with nearby food trucks.",
+            "Team project. I wrote MongoDB data model, account/truck creation, backend auth, & map display. Users browse/interact with nearby food trucks.",
           gitHub: "https://github.com/phil4lif/FoodTruck"
         },
         portfolio: {
@@ -176,9 +176,9 @@ export default {
   width: 45%;
 }
 .text-area {
-  @apply relative py-2 px-4 w-full;
+  @apply relative py-2 px-3 w-full;
   display: grid;
-  grid-template-rows: 20% auto auto 11%;
+  grid-template-rows: 20% auto auto 8%;
 }
 
 .project-title {
