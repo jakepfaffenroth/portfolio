@@ -20,11 +20,11 @@
           learn, and I have a proven history of self-teaching diverse subject
           matter.
         </p>
-        <p class='py-4'>
+        <p class="py-4">
           My professional experience spans higher education, non-profit
-          leadership, and small business, and I've be creating web solutions in
-          these fields since 2012. The sites I create are responsive and modern
-          with intuitive, asthetic design.
+          leadership, and small business, and I've been creating web solutions
+          in these fields since 2012. The sites I create are responsive and
+          modern with intuitive, asthetic design.
         </p>
         <p>
           Thanks for visiting.
