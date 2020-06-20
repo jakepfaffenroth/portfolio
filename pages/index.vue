@@ -11,9 +11,9 @@
         id="hello-text"
         class="sm:col-start-2 lg:pr-32 md:text-md font-light font-body text-gray-900 text-center sm:text-left "
       >
-        <p class="my-2 sm:mt-0 text-3xl sm:text-4xl font-display  ">
+        <h1 class="my-2 sm:mt-0 text-3xl sm:text-4xl font-display  ">
           Hello
-        </p>
+        </h1>
         <p>
           I'm a full stack web developer with a social science Ph.D. I love
           finding creative solutions to problems, I'm motivated to continuously
@@ -41,7 +41,7 @@
         {{ tech.name }}
       </p>
     </div>
-    <portfolio-links />
+    <!-- <portfolio-links /> -->
   </section>
 </template>
 
@@ -57,7 +57,7 @@ export default {
   },
   components: {
     Photo,
-    PortfolioLinks
+    // PortfolioLinks
     // AboutMe,
     // Projects,
     // Resume

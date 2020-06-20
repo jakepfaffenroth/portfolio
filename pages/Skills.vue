@@ -1,6 +1,7 @@
 <template>
   <section class="ml-10 mr-8 my-8 md:px-16 lg:px-32 xl:px-64">
     <!-- <h1 class="text-2xl border-b mb-4">Skills</h1> -->
+    <!-- <div>While I've acquired my skills in full stack web developement fairly recently, ... </div> -->
     <div class=" grid grid-cols-3">
       <div class="col-start-1">
         <h2 class='text-lg'>Front End</h2>
@@ -28,6 +29,7 @@
           <li>Project Management</li>
           <li>Communication</li>
           <li>Problem Solving</li>
+          <li>Remote work</li>
           <li>Time Management</li>
           <li>Teamwork</li>
           <li>Customer Service</li>

@@ -5,7 +5,7 @@
       <img :src="project.image" class="project-image" />
       <div class="text-area">
         <p class="project-stack">{{ project.stack }}</p>
-        <h3 class="project-title">{{ project.title }}</h3>
+        <h2 class="project-title">{{ project.title }}</h2>
         <p class="project-snippet">
           {{ project.snippet }}
         </p>
@@ -119,7 +119,7 @@ export default {
           image: PortfolioImg,
           stack: "Vue.js, Tailwind",
           snippet:
-            "You are here. Responsive SPA with basic routing and page transitions.",
+            "You are here. Responsive SPA with basic routing and page transitions. I used Vue for more practice.",
           notes:
             "My personal portfolio. Responsive SPA with basic routing and page transitions.",
           gitHub: "https://www.github.com/jakepfaffenroth/portfolio"
@@ -158,9 +158,9 @@ export default {
   height: 250px;
 }
 
-.project-card:hover {
+/* .project-card:hover {
   @apply shadow-xl
-}
+} */
 
 .project-card:hover .link-live {
   @apply text-orange-500 transition-all duration-100 ease-in-out;

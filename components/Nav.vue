@@ -6,10 +6,13 @@
         <div class="text-left self-center">
           <nuxt-link to="/" class="title text-xl font-bold">
             Jake Pfaffenroth
-            <span class="text-sm font-thin" v-if="$route.name !== 'index'">
-              / {{ $route.name.toLowerCase() }}</span
-            ></nuxt-link
+          </nuxt-link>
+          <h1
+            class="inline-block text-sm font-thin"
+            v-if="$route.name !== 'index'"
           >
+            / {{ $route.name.toLowerCase() }}
+          </h1>
           <p class="text-left -mt-2 md:-mt-1">Full stack web developer</p>
         </div>
       </div>
@@ -36,6 +39,7 @@
       <!-- Navbar links -->
       <div class="hidden md:block space-x-6 self-center">
         <!-- <nuxt-link to="/aboutme" class="nav-links">About Me</nuxt-link> -->
+        <nuxt-link to="/" class="nav-links">Home</nuxt-link>
         <nuxt-link to="/projects" class="nav-links">Projects</nuxt-link>
         <a
           href="https://www.github.com/jakepfaffenroth"
