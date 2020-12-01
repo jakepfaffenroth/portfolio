@@ -4,18 +4,18 @@
     <!-- <div>While I've acquired my skills in full stack web developement fairly recently, ... </div> -->
     <div class=" grid grid-cols-3">
       <div class="col-start-1">
-        <h2 class='text-lg'>Front End</h2>
+        <h2 class="text-lg">Front End</h2>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>Javascript</li>
-          <li>Vue.js</li>
-          <li>Tailwind.css</li>
+          <li>Vue</li>
+          <li>Tailwind</li>
           <li>Bootstrap</li>
         </ul>
       </div>
       <div class="col-start-2">
-        <h2 class='text-lg'>Back End</h2>
+        <h2 class="text-lg">Back End</h2>
         <ul>
           <li>Node.js</li>
           <li>Express</li>
@@ -24,7 +24,7 @@
         </ul>
       </div>
       <div class="col-start-3">
-        <h2 class='text-lg'>Soft Skills</h2>
+        <h2 class="text-lg">Soft Skills</h2>
         <ul>
           <li>Project Management</li>
           <li>Communication</li>

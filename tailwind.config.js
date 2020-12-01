@@ -4,8 +4,19 @@
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   theme: {
+    extend: {
+      colors: {
+        orange: colors.orange,
+        lightBlue: colors.lightBlue,
+        cyan: colors.cyan,
+        emerald: colors.emerald,
+        trueGray: colors.trueGray
+      }
+    },
     maxHeight: {
       "0": "0",
       "1/4": "25%",

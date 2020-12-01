@@ -12,18 +12,21 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
     "@nuxtjs/tailwindcss": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
+    "autoprefixer": "^9.8.6",
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
+    "nodemon": "^1.18.9",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
     "vue-jest": "^4.0.0-0"
   }
 }

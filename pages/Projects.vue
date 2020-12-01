@@ -36,18 +36,16 @@
               ></path>
             </svg>
             Live </a
-          ><a :href="project.gitHub" target="blank" class="link-github">
+          ><a :href="project.gitHub" target="blank" class="flex link-github">
             <svg
+              class="w-3 h-3 mr-1 mt-1"
               xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 26 21"
+              viewBox="0 0 24 21"
               fill="currentColor"
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="feather feather-github self-end mr-1"
             >
               <path
                 d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
@@ -77,6 +75,7 @@ import DrawImg from "~/assets/img/draw-ss.png";
 import FoodTrucksImg from "~/assets/img/food-truck-ss.png";
 import PortfolioImg from "~/assets/img/portfolio-ss.png";
 import ProjectModal from "~/components/ProjectModal.vue";
+import projects from "~/projects";
 
 export default {
   head() {
@@ -92,47 +91,7 @@ export default {
     return {
       isVisible: false,
       project: {},
-      projects: {
-        weather: {
-          title: "Weather App",
-          image: WeatherImg,
-          stack: "Vue.js, Tailwind, Chart.js, Node.js, Express",
-          snippet:
-            "A clean, mobile-first web app built using Vue, Node.js, and APIs from Climacell and HERE.",
-          description: `I was dissatisfied by existing weather apps (mobile and desktop), so I built the one I wanted. I designed it to be clean, modern, and fully responsive with efficient data presentation.
-          It was built using Vue.js, Tailwind.css, & Chart.js. Weather data is from Climacell.
-          Geolocation data is from HERE.`,
-          gitHub: "https://www.github.com/jakepfaffenroth/weather-app",
-          live: "https://weather.jakepfaf.dev"
-        },
-        FoodTruck: {
-          title: "Food Trucks (Native)",
-          image: FoodTrucksImg,
-          stack: "React Native, Node.js, Express, MongoDB",
-          snippet:
-            "Explore nearby food trucks. Team project - I'm responsible for MongoDB data model, user & truck creation, backend auth, map interaction, & UI design.",
-          gitHub: "https://github.com/phil4lif/FoodTruck"
-        },
-        portfolio: {
-          title: "Portfolio",
-          subtitle: "You are here",
-          image: PortfolioImg,
-          stack: "Vue.js, Tailwind",
-          snippet:
-            "You are here. Responsive SPA with basic routing and page transitions. I used Vue for more practice.",
-          notes:
-            "My personal portfolio. Responsive SPA with basic routing and page transitions.",
-          gitHub: "https://www.github.com/jakepfaffenroth/portfolio"
-        },
-        draw: {
-          title: "Draw",
-          image: DrawImg,
-          stack: "HTML, CSS, JS",
-          snippet: "A simple drawing app made with HTML, Javascript, and CSS.",
-          gitHub: "https://www.github.com/jakepfaffenroth/Draw",
-          live: "https://draw.jakepfaf.dev"
-        }
-      }
+      projects: projects
     };
   },
   methods: {
@@ -149,11 +108,11 @@ export default {
 
 <style>
 .section {
-  @apply flex flex-wrap justify-center text-center;
+  @apply flex flex-wrap justify-center mb-20 text-center;
 }
 
 .project-card {
-  @apply flex mt-8 mx-2 bg-white border rounded shadow-lg overflow-hidden;
+  @apply flex mt-4 md:mt-8 mx-2 bg-white border rounded shadow-lg overflow-hidden;
   width: 400px;
   height: 250px;
 }
@@ -186,7 +145,7 @@ export default {
 }
 
 .project-stack {
-  @apply row-start-1 mb-1 text-sm font-light;
+  @apply row-start-1 mb-1 text-sm font-light text-gray-700;
 }
 
 .project-snippet {
