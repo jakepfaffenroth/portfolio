@@ -1,4 +1,4 @@
-import csvImg from "~/assets/img/csv-ss.png";
+import csvImg from "~/assets/img/csv-ss.jpg";
 
 export default {
   title: "CSV Reformatter",

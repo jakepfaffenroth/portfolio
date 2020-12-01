@@ -1,4 +1,4 @@
-import PortfolioImg from "~/assets/img/portfolio-ss.png";
+import PortfolioImg from "~/assets/img/portfolio-ss.jpg";
 
 export default {
   title: "Portfolio",

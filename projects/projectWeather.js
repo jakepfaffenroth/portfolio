@@ -1,4 +1,4 @@
-import WeatherImg from "~/assets/img/weather-app-ss.png";
+import WeatherImg from "~/assets/img/weather-app-ss.jpg";
 
 export default {
   title: "Weather App",

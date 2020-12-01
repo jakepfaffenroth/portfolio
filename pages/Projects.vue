@@ -70,10 +70,10 @@
 
 <script>
 import Navbar from "~/components/Nav.vue";
-import WeatherImg from "~/assets/img/weather-app-ss.png";
-import DrawImg from "~/assets/img/draw-ss.png";
-import FoodTrucksImg from "~/assets/img/food-truck-ss.png";
-import PortfolioImg from "~/assets/img/portfolio-ss.png";
+import WeatherImg from "~/assets/img/weather-app-ss.jpg";
+import DrawImg from "~/assets/img/draw-ss.jpg";
+import FoodTrucksImg from "~/assets/img/food-truck-ss.jpg";
+import PortfolioImg from "~/assets/img/portfolio-ss.jpg";
 import ProjectModal from "~/components/ProjectModal.vue";
 import projects from "~/projects";
 

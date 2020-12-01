@@ -1,4 +1,4 @@
-import carouselImg from "~/assets/img/carousel-ss.png";
+import carouselImg from "~/assets/img/carousel-ss.jpg";
 
 export default {
   title: "Photo Sharing Platform",

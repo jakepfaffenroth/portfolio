@@ -1,4 +1,4 @@
-import urlShortenerImg from "~/assets/img/url-shortener-ss.png";
+import urlShortenerImg from "~/assets/img/url-shortener-ss.jpg";
 
 export default {
   title: "URL Shortener",

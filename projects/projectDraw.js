@@ -1,4 +1,4 @@
-import DrawImg from "~/assets/img/draw-ss.png";
+import DrawImg from "~/assets/img/draw-ss.jpg";
 
 export default {
   title: "Draw",

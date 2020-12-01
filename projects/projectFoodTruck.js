@@ -1,4 +1,4 @@
-import FoodTrucksImg from "~/assets/img/food-truck-ss.png";
+import FoodTrucksImg from "~/assets/img/food-truck-ss.jpg";
 
 export default {
   title: "Food Trucks (on hold)",
