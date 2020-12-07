@@ -1,17 +1,17 @@
 import photoSharing from "./projectPhotoSharing";
-import csvRefortmatter from "./projectCsvReformatter";
+import csvReformatter from "./projectCsvReformatter";
 import weather from "./projectWeather";
 import foodTruck from "./projectFoodTruck";
 import portfolio from "./projectsPortfolio";
 import draw from "./projectDraw";
 import short from "./projectURLShortener";
 
-export default [
+export default {
   photoSharing,
   short,
-  csvRefortmatter,
+  csvReformatter,
   weather,
   foodTruck,
   portfolio,
   draw
-];
+};

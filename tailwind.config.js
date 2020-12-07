@@ -23,6 +23,12 @@ module.exports = {
         cyan: colors.cyan,
         emerald: colors.emerald,
         trueGray: colors.trueGray
+      },
+      gridTemplateRows: {
+        textArea: "20% auto auto 8%"
+      },
+      spacing: {
+        "45perc": "45%"
       }
     },
     maxHeight: {

@@ -1,41 +1,38 @@
 <template>
-  <div
-    class="w-full h-56 px-2 mt-2 md:w-1/2 lg:w-1/3 xl:1/3 md:mt-4 md:px-2 xl:mx-0"
-  >
+  <div class="w-full lg:w-1/2 mt-4 md:mt-4 px-2">
     <div
-      class="project-card h-full flex bg-white border rounded shadow-lg overflow-hidden"
+      class="project-card md:h-full flex flex-col md:flex-row bg-white border rounded shadow-lg overflow-hidden"
     >
       <img
         :src="project.image"
-        class="w-45perc object-cover object-left-top border-r"
+        class="h-72 md:w-45perc md:h-full object-cover object-left-top border-r"
       />
-      <!-- text area -->
+      <!-- Text area -->
       <div
-        class="relative flex flex-col py-2 px-2 w-full lg:text-sm text-center"
+        class="relative flex flex-col py-2 px-4 w-full text-sm md:text-base lg:text-sm text-center"
       >
-        <p class=" h-1/5 mb-1 text-sm font-light text-gray-800">
+        <p class="h-1/5 mb-1 lg:font-light text-gray-800">
           {{ project.stack }}
         </p>
         <div class="mb-2 leading-tight">
-          <h2 class="text-lg">{{ project.title }}</h2>
-          <h3 v-if="project.subtitle" class="text-base text-gray-600 italic">
-            {{ project.subtitle }}
-          </h3>
+          <h2 class="text-2xl lg:text-xl font-display">
+            {{ project.title }}
+          </h2>
         </div>
-        <p class="flex-grow pb-2 text-sm font-light">
+        <p class="flex-grow pb-2 text-gray-700 lg:px-4 lg:font-light lg:text-black">
           {{ project.snippet }}
         </p>
         <div
-          class="justify-self-end flex h-6 justify-around text-sm tracking-wide"
+          class="flex justify-self-end h-6 justify-around font-normal tracking-wide"
         >
           <a
             v-if="project.live"
             :href="project.live"
             target="blank"
-            class="link-live"
+            class="link-live text-orange-500 md:text-black"
           >
             <svg
-              class="w-3 h-3 self-end my-auto mr-1"
+              class="w-4 h-4 self-end my-auto mr-1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"
@@ -47,9 +44,13 @@
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
             <span class="my-auto">Live</span> </a
-          ><a :href="project.gitHub" target="blank" class="flex link-github">
+          ><a
+            :href="project.gitHub"
+            target="blank"
+            class="flex link-github text-purple-500 md:text-black"
+          >
             <svg
-              class="w-3 h-3 self-end my-auto mr-1"
+              class="w-4 h-4 self-end my-auto mr-1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -77,11 +78,6 @@ export default {
 </script>
 
 <style scoped>
-/* .project-card {
-  width: 400px;
-  height: 250px;
-} */
-
 /* .project-card:hover {
   @apply shadow-xl
 } */
@@ -93,6 +89,28 @@ export default {
 .project-card:hover .link-github {
   @apply text-purple-600 transition-all duration-100 ease-in-out;
   text-shadow: 0 0 0.5px #9f7aea;
+}
+
+.project-image {
+  @apply object-cover object-left-top border-r;
+  width: 45%;
+}
+.text-area {
+  @apply relative py-2 px-3 w-full;
+  display: grid;
+  grid-template-rows: 20% auto auto 8%;
+}
+
+.project-title {
+  @apply row-start-2 align-text-top text-xl;
+}
+
+.project-stack {
+  @apply row-start-1 mb-1 text-sm font-light text-gray-700;
+}
+
+.project-snippet {
+  @apply row-start-3 text-sm font-light;
 }
 
 .project-links {
@@ -113,7 +131,7 @@ export default {
 
 .link-live:hover,
 .link-github:hover {
-  @apply cursor-pointer border-b-2 transition-all duration-75 ease-in-out;
+  @apply cursor-pointer  border-b-2 transition-all duration-75 ease-in-out;
 }
 .link-live:hover {
   @apply border-orange-500;

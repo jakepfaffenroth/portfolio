@@ -5,7 +5,7 @@ export default {
   image: urlShortenerImg,
   stack: "HTML, CSS, Node.js, Express, Postgres",
   snippet:
-    "Simple URL shortener that generates unique alphanumeric strings as redirect links. Full urls and unique strings are paired in a Postgres database and retrieved by Node.js backend.",
+    "Generates unique alphanumeric strings as redirect links to user-entered URLs.",
   gitHub: "https://www.github.com/jakepfaffenroth/url-shortener",
   live: "https://short.jakepfaf.dev"
 };

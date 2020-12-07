@@ -3,12 +3,10 @@ import carouselImg from "~/assets/img/carousel-ss.jpg";
 export default {
   title: "Photo Sharing Platform",
   image: carouselImg,
-  stack: "Vue, Tailwind, Node.js, Express, Postgres, Redis, B2",
+  stack: "Vue 3, Tailwind, Node.js, Express, Postgres, Redis, Backblaze B2, AWS SES/SNS",
   snippet:
-    "Users create private photo galleries that can be shared via a unique link. Invitees can view shared galleries and receive notifications without creating their own accounts.",
-  description: `I was dissatisfied by existing weather apps (mobile and desktop), so I built the one I wanted. I designed it to be clean, modern, and fully responsive with efficient data presentation.
-          It was built using Vue, Tailwind, & Chart.js. Weather data is from Climacell.
-          Geolocation data is from HERE.`,
+    "Users create private photo galleries that can be shared via a unique link. Recipients can view shared galleries and receive notifications without creating their own accounts. Backend image processing is optimized using data streams and a redis queue system. Client-server communication is via RESTful api. Frontend hosted on Netlify, backend on Digital Ocean droplet.",
+  description: '',
   gitHub: "https://www.github.com/jakepfaffenroth/family-sharing-app",
   live: "https://carousel.jakepfaf.dev"
 };

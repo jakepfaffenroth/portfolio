@@ -54,11 +54,11 @@
       </p>
       <p>
         Rounding out the basics, I know
-        <span class="text-trueGray-600 font-semibold">vanilla javascript</span>,
+        <span class="text-purple-600 font-semibold">vanilla javascript</span>,
         <span class="text-orange-600 font-semibold">HTML5</span>,
         <span class="text-blue-600 font-semibold">CSS3</span>,
-        <span class="text-purple-600 font-semibold">git</span>, and
-        <span class="text-red-800 font-semibold">Jest</span>.
+        <span class="text-orange-600  font-semibold">git</span>, and
+        <span class="text-emerald-500 font-semibold">Jest</span>.
       </p>
     </div>
   </section>
